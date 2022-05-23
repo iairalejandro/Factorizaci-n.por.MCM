@@ -13,17 +13,20 @@ def factorizar(n):
 while True:
     try:
         while True:
-            n = int(input("Ingrese un número mayor a 1: "))
-            if n > 1:
-                factores = factorizar(n)
-                print(f"Factorización de {n}:", " x ".join(map(str, factores)))
-            elif n < 1:
-                print("NÚMERO MAYOR A 1!!!")
-                continue
-            elif n == 1:
-                print("No hay numeros primos que dividan a 1")
-                continue
-            break
+            try:
+                n = int(input("Ingrese un número mayor a 1: "))
+                if n > 1:
+                    factores = factorizar(n)
+                    print(f"Factorización de {n}:", " x ".join(map(str, factores)))
+                elif n < 1:
+                    print("NÚMERO MAYOR A 1!!!")
+                    continue
+                elif n == 1:
+                    print("No hay numeros primos que dividan a 1")
+                    continue
+                break
+            except StopIteration:
+                    print("No se pudo factorizar el número con exactitud")
         break
     except ValueError:
         print("NÚMERO ENTERO!!!")
