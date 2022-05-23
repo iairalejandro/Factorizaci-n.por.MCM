@@ -16,3 +16,5 @@ este solamente mostrara al usuario los números primos los cuales se emplearon p
     
   •	El usuario al poner cualquier carácter que no sea un número el programa mandaba un error.(Solución: Se creo una excepción
     error de valor, mandando un mensaje diciendo que el número ingresado debe ser uno entero).
+    
+  •	El usuario al colocar un número el cual no se pueda factorizar con los números primos con exactitud el programa mandaba error "StopIteration" .(Solución: Se creo una     excepción, mandando un mensaje diciendo que el número no puede factorizarse con los números primos).
