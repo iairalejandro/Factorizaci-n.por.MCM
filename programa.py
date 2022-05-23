@@ -17,7 +17,7 @@ while True:
                 n = int(input("Ingrese un número mayor a 1: "))
                 if n > 1:
                     factores = factorizar(n)
-                    print(f"Factorización de {n}:", " x ".join(map(str, factores)))
+                    print(f"La Factorización de {n} es:", " x ".join(map(str, factores)))
                 elif n < 1:
                     print("NÚMERO MAYOR A 1!!!")
                     continue
