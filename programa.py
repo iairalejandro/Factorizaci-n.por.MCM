@@ -19,8 +19,10 @@ while True:
                 print(f"Factorización de {n}:", " x ".join(map(str, factores)))
             elif n < 1:
                 print("NÚMERO MAYOR A 1!!!")
+                continue
             elif n == 1:
                 print("No hay numeros primos que dividan a 1")
+                continue
             break
         break
     except ValueError:
